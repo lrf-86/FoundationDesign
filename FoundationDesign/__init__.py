@@ -18,3 +18,16 @@ from FoundationDesign.combinedfootingdesign import (
     CombinedFootingAnalysis,
     CombinedFootingDesign,
 )
+
+try:
+    from FoundationDesign.bearingcapacity import (
+        BaseFoundationParams,
+        PadFoundationParams,
+        StripFoundationParams,
+        BearingCapacityResult,
+        BaseBearingCapacity,
+        PadFoundationBearingCapacity,
+        StripFoundationBearingCapacity,
+    )
+except ImportError:
+    pass
